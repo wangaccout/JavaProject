@@ -1,0 +1,22 @@
+package my;
+
+import java.util.*;
+
+public class HashMapTest {
+	public static void main(String[] args) {
+		// 创建HashMap对象
+		HashMap<Integer, String> sites = new HashMap<Integer,String>();
+		sites.put(1, "google"); // 添加键值对
+		sites.put(2, "runoob");
+		sites.put(3, "taobao");
+		sites.put(4, "zhihu");
+		System.out.println(sites);
+		System.out.println(sites.get(3)); // 访问元素
+		System.out.println(sites.size()); // 计算大小
+		sites.remove(4); // 删除元素
+		System.out.println(sites);
+		sites.clear(); // 删除所有键值对
+		System.out.println(sites);
+		
+	}
+}

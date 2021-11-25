@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="0" failed="3" skipped="0">
+  <reporter-output>
+    <line>
+      <![CDATA[[electronicCustomizationAutoTest&nbsp;2021-09-17 星期五 16:27:19]&nbsp;&nbsp;测试开始]]>
+    </line>
+    <line>
+      <![CDATA[[electronicCustomizationAutoTest&nbsp;2021-09-17 星期五 16:27:19]&nbsp;&nbsp;初始化系统变量]]>
+    </line>
+    <line>
+      <![CDATA[[electronicCustomizationAutoTest&nbsp;2021-09-17 星期五 16:27:19]&nbsp;&nbsp;开始调用<b>loginTest</b>函数(RegistLogin::SystemDemandTest::com.qa.system.testcases.LoginTest)]]>
+    </line>
+    <line>
+      <![CDATA[[electronicCustomizationAutoTest&nbsp;2021-09-17 星期五 16:27:20]&nbsp;&nbsp;<b>loginTest</b>函数调用结束]]>
+    </line>
+    <line>
+      <![CDATA[[electronicCustomizationAutoTest&nbsp;2021-09-17 星期五 16:27:20]&nbsp;&nbsp;开始调用<b>listTest</b>函数(RegistLogin::SystemDemandTest::com.qa.system.testcases.DemandTest)]]>
+    </line>
+    <line>
+      <![CDATA[[electronicCustomizationAutoTest&nbsp;2021-09-17 星期五 16:27:20]&nbsp;&nbsp;<b>listTest</b>函数调用结束]]>
+    </line>
+    <line>
+      <![CDATA[[electronicCustomizationAutoTest&nbsp;2021-09-17 星期五 16:27:20]&nbsp;&nbsp;开始调用<b>listTest</b>函数(RegistLogin::SystemDemandTest::com.qa.system.testcases.DemandTest)]]>
+    </line>
+    <line>
+      <![CDATA[[electronicCustomizationAutoTest&nbsp;2021-09-17 星期五 16:27:20]&nbsp;&nbsp;<b>listTest</b>函数调用结束]]>
+    </line>
+  </reporter-output>
+  <suite started-at="2021-09-17T08:27:19 UTC" name="RegistLogin" finished-at="2021-09-17T08:27:20 UTC" duration-ms="977">
+    <groups>
+    </groups>
+    <test started-at="2021-09-17T08:27:19 UTC" name="SystemDemandTest" finished-at="2021-09-17T08:27:20 UTC" duration-ms="977">
+      <class name="com.qa.system.testcases.LoginTest">
+        <test-method signature="loginTest(org.testng.ITestContext, java.lang.String, java.lang.String)[pri:0, instance:com.qa.system.testcases.LoginTest@5032714f]" started-at="2021-09-17T08:27:19 UTC" name="loginTest" data-provider="SystemLoginData" finished-at="2021-09-17T08:27:20 UTC" duration-ms="402" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@60db1c0e]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[tiger]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[123456]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [200] but found [404]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [200] but found [404]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:453)
+at org.testng.Assert.assertEquals(Assert.java:463)
+at com.qa.util.HttpClientUtil.httpPostCookieUtil(HttpClientUtil.java:506)
+at com.qa.system.testcases.LoginTest.loginTest(LoginTest.java:78)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+            <line>
+              <![CDATA[[electronicCustomizationAutoTest&nbsp;2021-09-17 星期五 16:27:19]&nbsp;&nbsp;开始调用<b>loginTest</b>函数(RegistLogin::SystemDemandTest::com.qa.system.testcases.LoginTest)]]>
+            </line>
+            <line>
+              <![CDATA[[electronicCustomizationAutoTest&nbsp;2021-09-17 星期五 16:27:20]&nbsp;&nbsp;<b>loginTest</b>函数调用结束]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+      </class> <!-- com.qa.system.testcases.LoginTest -->
+      <class name="com.qa.system.testcases.DemandTest">
+        <test-method signature="listTest(org.testng.ITestContext, com.qa.util.CaseInfo)[pri:0, instance:com.qa.system.testcases.DemandTest@48bb62]" started-at="2021-09-17T08:27:20 UTC" name="listTest" data-provider="ListDataFromExcel" finished-at="2021-09-17T08:27:20 UTC" duration-ms="2" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@60db1c0e]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[com.qa.util.CaseInfo@54a3ab8f]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at com.qa.system.testcases.DemandTest.listTest(DemandTest.java:66)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+            <line>
+              <![CDATA[[electronicCustomizationAutoTest&nbsp;2021-09-17 星期五 16:27:20]&nbsp;&nbsp;开始调用<b>listTest</b>函数(RegistLogin::SystemDemandTest::com.qa.system.testcases.DemandTest)]]>
+            </line>
+            <line>
+              <![CDATA[[electronicCustomizationAutoTest&nbsp;2021-09-17 星期五 16:27:20]&nbsp;&nbsp;<b>listTest</b>函数调用结束]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- listTest -->
+        <test-method signature="listTest(org.testng.ITestContext, com.qa.util.CaseInfo)[pri:0, instance:com.qa.system.testcases.DemandTest@48bb62]" started-at="2021-09-17T08:27:20 UTC" name="listTest" data-provider="ListDataFromExcel" finished-at="2021-09-17T08:27:20 UTC" duration-ms="2" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@60db1c0e]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[com.qa.util.CaseInfo@19868320]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at com.qa.system.testcases.DemandTest.listTest(DemandTest.java:66)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+            <line>
+              <![CDATA[[electronicCustomizationAutoTest&nbsp;2021-09-17 星期五 16:27:20]&nbsp;&nbsp;开始调用<b>listTest</b>函数(RegistLogin::SystemDemandTest::com.qa.system.testcases.DemandTest)]]>
+            </line>
+            <line>
+              <![CDATA[[electronicCustomizationAutoTest&nbsp;2021-09-17 星期五 16:27:20]&nbsp;&nbsp;<b>listTest</b>函数调用结束]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- listTest -->
+      </class> <!-- com.qa.system.testcases.DemandTest -->
+    </test> <!-- SystemDemandTest -->
+  </suite> <!-- RegistLogin -->
+</testng-results>

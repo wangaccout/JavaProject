@@ -1,0 +1,20 @@
+package my;
+
+import java.util.*;
+
+public class IteratorTest {
+	public static void main(String[] args) {
+		ArrayList<Integer> numbers = new ArrayList<Integer>();
+		numbers.add(12);
+		numbers.add(8);
+		numbers.add(2);
+		numbers.add(23);
+		
+		// 获取迭代器
+		Iterator<Integer> it = numbers.iterator();
+		// 输出集合的所有元素
+		while(it.hasNext()) {
+			System.out.println(it.next());
+		}
+	}
+}

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="java.util.Iterator"/>
+    <fullyQualifiedTypeName name="org.apache.http.impl.client.CloseableHttpClient"/>
+    <fullyQualifiedTypeName name="org.apache.http.client.methods.CloseableHttpResponse"/>
+    <fullyQualifiedTypeName name="java.util.Map.Entry"/>
+    <fullyQualifiedTypeName name="com.alibaba.fastjson.JSONAware"/>
+    <fullyQualifiedTypeName name="com.alibaba.fastjson.JSONArray"/>
+    <fullyQualifiedTypeName name="com.alibaba.fastjson.JSONObject"/>
+    <fullyQualifiedTypeName name="com.mytest.httpclient.Util"/>
+    <fullyQualifiedTypeName name="java.lang.System.Logger"/>
+    <fullyQualifiedTypeName name="org.testng.ITestContext"/>
+    <fullyQualifiedTypeName name="org.apache.http.HttpStatus"/>
+    <fullyQualifiedTypeName name="org.apache.http.protocol.HTTP"/>
+    <fullyQualifiedTypeName name="java.util.TreeMap"/>
+    <fullyQualifiedTypeName name="com.mytest.httpclient.HttpClientUtil"/>
+    <fullyQualifiedTypeName name="org.apache.poi.hpsf.Constants"/>
+    <fullyQualifiedTypeName name="com.beust.jcommander.internal.Lists"/>
+    <fullyQualifiedTypeName name="java.io.IOException"/>
+    <fullyQualifiedTypeName name="test.LoginVerifying"/>
+    <fullyQualifiedTypeName name="com.qa.system.verifying.LoginVerifying"/>
+    <fullyQualifiedTypeName name="com.qa.util.Constants"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="com.qa.system.data.DemandDataProvider"/>
+    <fullyQualifiedTypeName name="net.sf.json.JSONArray"/>
+</qualifiedTypeNameHistroy>

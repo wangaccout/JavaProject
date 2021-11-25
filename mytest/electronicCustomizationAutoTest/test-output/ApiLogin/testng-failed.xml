@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="classes" name="Failed suite [ApiLogin]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="com.qa.listener.ExecutionInvokedListener"/>
+    <listener class-name="com.qa.listener.ExtentTestNGIReporterListener"/>
+  </listeners>
+  <test thread-count="5" parallel="tests" name="ApiLoginTest(failed)">
+    <classes>
+      <class name="com.qa.api.testcases.LoginTest">
+        <methods>
+          <include name="loginTest" invocation-numbers="0 1 2 3 4"/>
+        </methods>
+      </class> <!-- com.qa.api.testcases.LoginTest -->
+    </classes>
+  </test> <!-- ApiLoginTest(failed) -->
+</suite> <!-- Failed suite [ApiLogin] -->

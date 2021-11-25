@@ -1,0 +1,17 @@
+package my;
+
+import java.util.*;
+
+public class ArrayListTest {
+	public static void main(String[] args) {
+		List<String> list = new ArrayList<String>();
+		list.add("hello");
+		list.add("world");
+		list.add("hahahaha");
+		
+		// 第一种遍历方法，使用For-Each遍历List
+		for(String str : list) { // 也可以写成for(int i=0; i<list.size();i++)
+			System.out.println(str);
+		}
+	}
+}

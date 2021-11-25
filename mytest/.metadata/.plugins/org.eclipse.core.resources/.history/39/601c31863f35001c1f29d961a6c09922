@@ -1,0 +1,16 @@
+package my;
+
+import java.util.*;
+
+public class ArrayListTest {
+	public static void main(String[] args) {
+		List<String> list = new ArrayList<String>();
+		list.add("hello");
+		list.add("world");
+		list.add("hahahaha");
+		
+		for(String str : list) {
+			System.out.println(str);
+		}
+	}
+}

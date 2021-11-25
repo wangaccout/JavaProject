@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="RegistLogin" parallel="classes" thread-count="5">
+
+	<test name="SystemLoginTest" preserve-order="true"
+		parallel="tests">
+		<classes>
+
+			<class name="mtest.LoginTest">
+				<methods>
+					<include name="loginTest"/>
+				</methods>
+			</class>
+
+		</classes>
+	</test>
+
+	<listeners>
+		<listener
+			class-name="com.qa.listener.ExecutionInvokedListener" />
+		<listener
+			class-name="com.qa.listener.ExtentTestNGIReporterListener" />
+	</listeners>
+
+</suite> 

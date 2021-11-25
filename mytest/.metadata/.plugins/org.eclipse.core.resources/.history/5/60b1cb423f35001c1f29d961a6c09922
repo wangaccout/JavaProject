@@ -1,0 +1,9 @@
+package my;
+
+import java.util.*;
+
+public class ArrayListTest {
+	public static void main(String[] args) {
+		List<String> list = new ArrayListTest<String>();
+	}
+}

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<list key="CommitDialog.authorValues">
+		<item value="wangxy &lt;849416854@qq.com&gt;"/>
+	</list>
+	<list key="CommitDialog.committerValues">
+		<item value="wangxy &lt;849416854@qq.com&gt;"/>
+	</list>
+	<list key="EGit.KnownHosts">
+		<item value="git.eclipse.org"/>
+		<item value="github.com"/>
+		<item value="bitbucket.org"/>
+	</list>
+	<section name="org.eclipse.egit.ui.internal.staging.StagingView">
+		<item key="HORIZONTAL_SASH_FORM_WEIGHT" value="500,500"/>
+		<item key="STAGING_SASH_FORM_WEIGHT" value="500,500"/>
+		<item key="sortItemState" value="false"/>
+	</section>
+	<section name="GitCommitMessageComponent">
+		<list key="D:\eclipse\test\my\src\my\.git">
+			<item value="false"/>
+			<item value="wangxy &lt;849416854@qq.com&gt;"/>
+			<item value="11.22"/>
+			<item value="wangxy &lt;849416854@qq.com&gt;"/>
+			<item value="068981ea079d8dffc6e6c0c0a5b4e894bfe0e519"/>
+			<item value="0"/>
+			<item value="false"/>
+		</list>
+		<list key="D:\eclipse\test\my\.git">
+			<item value="false"/>
+			<item value="wangxy &lt;849416854@qq.com&gt;"/>
+			<item value="11.22 update"/>
+			<item value="wangxy &lt;849416854@qq.com&gt;"/>
+			<item value="5bf5751098141693c94cbc5098742bbf52d00d9f"/>
+			<item value="0"/>
+			<item value="false"/>
+		</list>
+	</section>
+	<section name="org.eclipse.egit.ui.internal.push.PushResultDialog.dialogBounds">
+		<item key="DIALOG_X_ORIGIN" value="635"/>
+		<item key="DIALOG_Y_ORIGIN" value="204"/>
+		<item key="DIALOG_WIDTH" value="668"/>
+		<item key="DIALOG_HEIGHT" value="481"/>
+		<item key="DIALOG_FONT_NAME" value="1|Microsoft YaHei UI|9.0|0|WINDOWS|1|-15|0|0|0|400|0|0|0|1|0|0|0|0|Microsoft YaHei UI"/>
+		<list key="sashWeights">
+			<item value="600"/>
+			<item value="400"/>
+		</list>
+	</section>
+	<section name="org.eclipse.egit.ui.internal.pull.PullResultDialog.dialogBounds">
+		<item key="DIALOG_X_ORIGIN" value="611"/>
+		<item key="DIALOG_Y_ORIGIN" value="216"/>
+		<item key="DIALOG_WIDTH" value="716"/>
+		<item key="DIALOG_HEIGHT" value="462"/>
+		<item key="DIALOG_FONT_NAME" value="1|Microsoft YaHei UI|9.0|0|WINDOWS|1|-15|0|0|0|400|0|0|0|1|0|0|0|0|Microsoft YaHei UI"/>
+	</section>
+</section>
