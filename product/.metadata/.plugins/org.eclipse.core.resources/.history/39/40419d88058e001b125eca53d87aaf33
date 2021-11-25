@@ -1,0 +1,91 @@
+package com.qa.system.testcases;
+
+import java.util.Map;
+import java.util.TreeMap;
+import java.util.logging.Logger;
+
+import org.json.JSONObject;
+import org.testng.ITestContext;
+import org.testng.annotations.Test;
+
+import com.qa.system.verifying.LoginVerifying;
+import com.qa.util.HttpClientUtil;
+
+/**
+ * 
+ * @author cn
+ * 
+ *         平台运营：登陆
+ *
+ */
+public class LoginTest {
+
+	private static Logger log = Logger.getLogger(LoginTest.class.getName());
+
+	/*
+	 * http://hyl-test.shanghai.cosmoplat.com/admin：平台运营：登陆
+	 */
+	@Test(dataProvider = "SystemLoginData", dataProviderClass = com.qa.system.data.LoginDataProvider.class)
+	public static void loginTest(ITestContext context, String account, String password) {
+		login(context, account, password, "登陆");
+
+	}
+
+	/*
+	 * http://hyl-test.shanghai.cosmoplat.com/admin：平台运营：登陆
+	 */
+	@Test(dataProvider = "NoDepartmentHeadSystemLoginData", dataProviderClass = com.qa.system.data.LoginDataProvider.class)
+	public static void noDepartmentHeadoginTest(ITestContext context, String account, String password) {
+		login(context, account, password, "非部门负责人登陆");
+
+	}
+
+	/*
+	 * http://hyl-test.shanghai.cosmoplat.com/admin：平台运营：登陆
+	 */
+	@Test(dataProvider = "DepartmentHeadSystemLoginData", dataProviderClass = com.qa.system.data.LoginDataProvider.class)
+	public static void departmentHeadoginTest(ITestContext context, String account, String password) {
+		login(context, account, password, "部门负责人登陆");
+
+	}
+
+	private static void login(ITestContext context, String account, String password, String describe) {
+		String interfaceUrl = "/operate/login";
+		String interfaceDesc = "http://hyl-test.shanghai.cosmoplat.com/admin：平台运营：登陆接口";
+
+		log.info(interfaceDesc + interfaceUrl + "  开始>>>>>>>>>>>");
+		System.out.println("测试场景：" + interfaceDesc + " ---------------------------------> " + describe);
+
+		String domainName = System.getProperty("admin.URL");
+		StringBuilder url = new StringBuilder(domainName);
+		url.append(interfaceUrl);
+		System.out.println(url.toString());
+
+		/*
+		 * 封装请求参数
+		 */
+		JSONObject jsonObjectParams = new JSONObject();
+		jsonObjectParams.put("account", account);
+		jsonObjectParams.put("password", password);
+		System.out.println(jsonObjectParams.toString());
+
+		/*
+		 * 请求头
+		 */
+		Map<String, String> headerMap = new TreeMap<String, String>();
+		headerMap.put("Content-Type", "application/json; charset=utf-8");
+
+		/*
+		 * 请求、响应
+		 */
+		String resultData = HttpClientUtil.httpPostCookieUtil(context, url.toString(), jsonObjectParams, headerMap);
+		System.out.println("返回内容：" + resultData);
+
+		/*
+		 * 校验
+		 */
+		LoginVerifying.loginVerifying(context, resultData, interfaceUrl.toString(), account);
+
+	}
+
+}
